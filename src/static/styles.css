@@ -188,6 +188,130 @@ button:hover {
   border: 1px solid #bee5eb;
 }
 
+/* Authentication Styles */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-section {
+  text-align: left;
+}
+
+.auth-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.user-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+#login-container {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  z-index: 1000;
+}
+
+#login-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #333;
+}
+
+#login-container button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#login-btn {
+  background-color: #1a237e;
+  color: white;
+}
+
+#login-btn:hover {
+  background-color: #303f9f;
+}
+
+#cancel-login-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+#cancel-login-btn:hover {
+  background-color: #bbb;
+}
+
+#user-info {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#logout-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .title-section {
+    text-align: center;
+  }
+  
+  #login-container {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+  }
+}
+
 .hidden {
   display: none;
 }
